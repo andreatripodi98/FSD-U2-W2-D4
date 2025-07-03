@@ -1,0 +1,55 @@
+// lo scopo di questo file è permetterci di applicare una "copertina" di
+// personalizzazioni sui sorgenti dell'ultima versione di bootstrap
+// lavoriamo qui e non direttamente nei partials che abbiamo scaricato in quanto
+// questo file di personalizzazione potrà poi venire riutilizzato ed applicato
+// su una qualsiasi versione anche futura del framework
+
+// quindi l'idea è che questo file generi, una volta compilato, un
+// "custom-bootstrap.css" con all'interno tutte le mie modifiche
+
+// partiamo! andiamo a modificare i COLORI base del framework
+// questi colori base sono definiti nel partial chiamato "_variables.scss"
+@import './scss/functions'; /* questo serve per _variables */
+@import './scss/variables';
+// ora sono definiti i vari primary, secondary, success etc.
+
+$new-primary: rgb(174, 31, 174);
+$new-secondary: rgb(201, 201, 201);
+$new-danger: rgb(244, 127, 43);
+$stefano: rgb(12, 143, 143);
+
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+  'danger': $new-danger,
+  'stefano': $stefano,
+);
+
+// ...ho creato i miei due colori nuovi, gli ho dato i nomi di "primary"
+// e "secondary" nella mia versione della mappa colori...
+// ...e ora vado a FONDERE la mia mappa colori con quella di default di bootstrap!
+
+// riassegno il valore alla $theme-colors originale di bootstrap
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+// ora questa mappa ha tutti i colori di default di bootstrap ma primary
+// e secondary sono diventati il mio viola e il mio grigio!
+
+// cambiamo gli "spacers"
+$new-spacers: (
+  6: $spacer * 4,
+  //   aggiungo un nuovo spacer con il valore 6
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+@import './scss/bootstrap.scss';
+// ...ma scusa: se ti sei andato a reimportare nuovamente TUTTO bootstrap
+// alla fine delle tue personalizzazioni, non sei andato a sovrascrivere nuovamente
+// $theme-colors? come fanno i tuoi colori ad essere arrivati nel file compilato?
+
+// questo avviene perchè TUTTE le variabili definite nei partials di bootstrap
+// sono state dichiarate con un flag !default alla fine. !default significa:
+// "creo questa variabile a meno che non sia già stata creata prima"
+
+// si va a importare tutto quello che manca senza andare a sovrascrivere
+// quello che ho personalizzato io!
