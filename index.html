@@ -4,16 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sito Viaggi</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="./assets/sky_travel_logo.png" alt="logo" width="50"
@@ -54,7 +49,10 @@
                 placeholder="Cerca posti da sogno"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-danger" type="submit">
+              <button
+                class="btn btn-outline-primary rounded-pill px-4"
+                type="submit"
+              >
                 Cerca
               </button>
             </form>
@@ -62,17 +60,20 @@
         </div>
       </nav>
     </header>
-    <div class="container bg-body-tertiary my-4 py-4">
+    <div class="container bg-tertiary my-4 py-4">
       <div class="row text-center text-lg-start px-5">
         <div class="col">
           <h1 class="justify-content-center text-secondary fw-normal">
             Sky Travel
           </h1>
           <hr />
-          <p class="fs-4 text-secondary fst-italic">
+          <p class="fs-4 text-primary fst-italic">
             Scopri le destinazioni del momento!
           </p>
-          <button type="button" class="btn btn-info btn-lg text-light my-3">
+          <button
+            type="button"
+            class="btn btn-andrea btn-lg text-light my-3 rounded-pill"
+          >
             Prenota ora
           </button>
         </div>
@@ -80,72 +81,83 @@
     </div>
     <div class="container">
       <div class="row g-3">
-        <h3 class="py-2">Saldi</h3>
+        <div class="d-flex align-items-center">
+            <h3 class="flex-grow-1">Welcome Summer</h3>
+            <p class="text-secondary justify-content-end">Nascondi sezione</p>
+          </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="card border border-info border border-2">
+          <div
+            class="card border border-info border border-5 rounded-top-5 rounded-bottom-5"
+          >
             <img
               src="./assets/optimized_travel_image.jpg"
-              class="card-img-top"
+              class="card-img-top rounded-top-4"
               alt="hotel"
             />
-            <div class="card-body">
+            <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-info">Prenota</a>
+              <a href="#" class="btn btn-info rounded-pill">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="card border border-info border border-2">
+          <div
+            class="card border border-info border border-5 rounded-top-5 rounded-bottom-5"
+          >
             <img
               src="./assets/optimized_travel_image.jpg"
-              class="card-img-top"
+              class="card-img-top rounded-top-4"
               alt="hotel"
             />
-            <div class="card-body">
+            <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-info">Prenota</a>
+              <a href="#" class="btn btn-info rounded-pill">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col col-6 col-md-4 col-lg-3">
-          <div class="card border border-info border border-2">
+          <div
+            class="card border border-info border border-5 rounded-top-5 rounded-bottom-5"
+          >
             <img
               src="./assets/optimized_travel_image.jpg"
-              class="card-img-top"
+              class="card-img-top rounded-top-4"
               alt="hotel"
             />
-            <div class="card-body">
+            <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-info">Prenota</a>
+              <a href="#" class="btn btn-info rounded-pill">Prenota</a>
             </div>
           </div>
         </div>
         <div class="col col-6 col-lg-3 d-md-none d-lg-block">
-          <div class="card border border-info border border-2">
+          <div
+            class="card border border-info border border-5 rounded-top-5 rounded-bottom-5"
+          >
             <img
               src="./assets/optimized_travel_image.jpg"
-              class="card-img-top"
+              class="card-img-top rounded-top-4"
               alt="hotel"
             />
-            <div class="card-body">
+            <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-info">Prenota</a>
+              <a href="#" class="btn btn-info rounded-pill">Prenota</a>
             </div>
           </div>
         </div>
@@ -156,119 +168,107 @@
         <div class="row">
           <div class="d-flex align-items-center">
             <h3 class="flex-grow-1">Welcome Summer</h3>
-            <p class="text-info justify-content-end">Nascondi sezione</p>
+            <p class="text-secondary justify-content-end">Nascondi sezione</p>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
           <div class="col col-6 col-md-6 col-lg-4">
-            <div
-              class="card border border-0 shadow mb-5 bg-body-tertiary rounded"
-            >
+            <div class="card border border-0 shadow mb-5 bg-tertiary rounded-5">
               <img
                 src="./assets/optimized_travel_image.jpg"
-                class="card-img-top"
+                class="card-img-top rounded-top-5"
                 alt="hotel"
               />
-              <div class="card-body">
+              <div class="card-body rounded-bottom-5 bg-dark-mode text-info">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-info">Prenota</a>
+                <a href="#" class="btn btn-info rounded-pill">Prenota</a>
               </div>
             </div>
           </div>
@@ -281,8 +281,8 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
-              style="width: 100%;"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              style="width: 100%"
             />
           </div>
           <div class="col-6">
@@ -307,7 +307,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -315,7 +315,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -323,7 +323,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -331,7 +331,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -339,7 +339,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -347,7 +347,7 @@
             <img
               src="./assets/optimized_travel_image.jpg"
               alt="hotel"
-              class="rounded-2 border border-0 shadow mb-5 bg-body-tertiary rounded"
+              class="rounded-5 border border-0 shadow mb-5 bg-body-tertiary rounded"
               style="width: 100%"
             />
           </div>
@@ -359,7 +359,7 @@
           <img
             src="./assets/user.png"
             alt="user"
-            class="rounded-circle border border-info border border-2"
+            class="rounded-circle border border-info border border-5"
             style="width: 50px"
           />
           <div>
@@ -379,7 +379,7 @@
           <img
             src="./assets/user.png"
             alt="user"
-            class="rounded-circle border border-info border border-2"
+            class="rounded-circle border border-info border border-5"
             style="width: 50px"
           />
           <div>
@@ -399,7 +399,7 @@
           <img
             src="./assets/user.png"
             alt="user"
-            class="rounded-circle border border-info border border-2"
+            class="rounded-circle border border-info border border-5"
             style="width: 50px"
           />
           <div>
@@ -421,14 +421,10 @@
     <footer class="bg-dark text-light py-5 mt-3">
       <div class="container text-center">
         <button class="btn btn-outline-secondary">Contattaci</button>
-        <p class="mb-0 py-4">&copy; 2025 Kalina Travel LTD. All Rights Reserved.</p>
+        <p class="mb-0 py-4">
+          &copy; 2025 Kalina Travel LTD. All Rights Reserved.
+        </p>
       </div>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

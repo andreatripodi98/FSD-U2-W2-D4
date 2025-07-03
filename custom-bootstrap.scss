@@ -9,20 +9,33 @@
 
 // partiamo! andiamo a modificare i COLORI base del framework
 // questi colori base sono definiti nel partial chiamato "_variables.scss"
-@import './scss/functions'; /* questo serve per _variables */
-@import './scss/variables';
+@import "./scss/functions"; /* questo serve per _variables */
+@import "./scss/variables";
 // ora sono definiti i vari primary, secondary, success etc.
 
-$new-primary: rgb(174, 31, 174);
-$new-secondary: rgb(201, 201, 201);
+$new-primary: rgb(211, 35, 117);
+$new-secondary: rgb(76, 24, 145);
+$andrea: rgb(163, 68, 226);
 $new-danger: rgb(244, 127, 43);
-$newì: rgb(12, 143, 143);
+$new-tertiary: rgb(246, 240, 255);
+$dark-mode: rgb(34, 33, 34);
+$new-info: rgb(83, 250, 228);
+$epicode-1: #5726c3;
+$epicode-2: #8625a5;
+$ epicode-3: #cb2376;
+
 
 $new-theme-colors: (
-  'primary': $new-primary,
-  'secondary': $new-secondary,
-  'danger': $new-danger,
-  'stefano': $stefano,
+  "primary": $new-primary,
+  "secondary": $new-secondary,
+  "danger": $new-danger,
+  "tertiary": $new-tertiary,
+  "andrea": $andrea,
+  "dark-mode": $dark-mode,
+  "info": $new-info,
+  "epicode-1": $epicode-1,
+  "epicode-2": $epicode-2,
+  "epicode-3": $epicode-3,
 );
 
 // ...ho creato i miei due colori nuovi, gli ho dato i nomi di "primary"
@@ -42,7 +55,7 @@ $new-spacers: (
 
 $spacers: map-merge($spacers, $new-spacers);
 
-@import './scss/bootstrap.scss';
+@import "./scss/bootstrap.scss";
 // ...ma scusa: se ti sei andato a reimportare nuovamente TUTTO bootstrap
 // alla fine delle tue personalizzazioni, non sei andato a sovrascrivere nuovamente
 // $theme-colors? come fanno i tuoi colori ad essere arrivati nel file compilato?
